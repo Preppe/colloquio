@@ -40,8 +40,8 @@ export function ActivityTable({ activities }: { activities: Activity[] }) {
 
   useEffect(() => {
     const dataRows: DataRow[] = activities.map((activity) => ({
-      project: activity.project.name,
-      employee: activity.employee.name,
+      project: activity.project.id,
+      employee: activity.employee.id,
       date: activity.date,
       hours: activity.hours,
     }));
